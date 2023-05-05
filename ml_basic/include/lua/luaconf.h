@@ -8,7 +8,7 @@
 #ifndef lconfig_h
 #define lconfig_h
 
-#include <limits.h>
+#include <climits>
 #include <stddef.h>
 
 
@@ -229,7 +229,7 @@
 #define lua_stdin_is_tty()	isatty(0)
 #elif defined(LUA_WIN)
 #include <io.h>
-#include <stdio.h>
+#include <cstdio>
 #define lua_stdin_is_tty()	_isatty(_fileno(stdin))
 #else
 #define lua_stdin_is_tty()	1  /* assume stdin is a tty */
@@ -271,7 +271,7 @@
 ** GNU readline and history facilities).
 */
 #if defined(LUA_USE_READLINE)
-#include <stdio.h>
+#include <cstdio>
 #include <readline/readline.h>
 #include <readline/history.h>
 #define lua_readline(L,b,p)	((void)L, ((b)=readline(p)) != NULL)
@@ -375,7 +375,7 @@
 ** with Lua. A useful redefinition is to use assert.h.
 */
 #if defined(LUA_USE_APICHECK)
-#include <assert.h>
+#include <cassert>
 #define luai_apicheck(L,o)	{ (void)L; assert(o); }
 #else
 #define luai_apicheck(L,o)	{ (void)L; }

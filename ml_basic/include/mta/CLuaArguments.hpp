@@ -1,9 +1,5 @@
 #pragma once
 
-extern "C" {
-#   include <lua/lua.h>
-}
-
 #include <mta/CLuaArgument.hpp>
 #include <vector>
 

@@ -77,5 +77,8 @@
     <ClInclude Include="include\mta\init.hpp">
       <Filter>Pliki zasobów\mta</Filter>
     </ClInclude>
+    <ClInclude Include="include\lua\lua.hpp">
+      <Filter>Pliki zasobów\lua</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

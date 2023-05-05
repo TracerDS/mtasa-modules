@@ -1,8 +1,6 @@
 #pragma once
 
-extern "C" {
-#   include <lua/lua.h>
-}
+#include <lua/lua.hpp>
 
 class CLuaArgument {
     int m_iType{};

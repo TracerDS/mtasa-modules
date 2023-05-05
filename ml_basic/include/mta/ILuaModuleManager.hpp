@@ -3,9 +3,7 @@
 // Max length of module name and author
 #define MAX_INFO_LENGTH 128
 
-extern "C" {
-#   include <lua/lua.h>
-}
+#include <lua/lua.hpp>
 #include <string>
 
 #ifndef __CChecksum_H

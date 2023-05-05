@@ -27,6 +27,17 @@
 #	endif
 #endif
 
+// Uncomment line below if you dont want to mess with Linker settings
+// Alternatively define _AUTO_LINK in Preprocessor Definitions
+//#define _AUTO_LINK
+#ifdef _AUTO_LINK
+#	ifdef ANY_x64
+#		pragma comment(lib, "lua5.1_64.lib")
+#	else
+#		pragma comment(lib, "lua5.1.lib")
+#	endif
+#endif
+
 extern inline ILuaModuleManager10* pModuleManager = NULL;
 
 static std::string GetResourceName(lua_State* luaVM) noexcept;

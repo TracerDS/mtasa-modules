@@ -12,8 +12,7 @@
 #include <stdarg.h>
 #include <stddef.h>
 
-
-#include "luaconf.h"
+#include <lua/luaconf.h>
 
 
 #define LUA_VERSION	"Lua 5.1"
