@@ -11,10 +11,17 @@
 #endif
 #define MAX_RESOURCE_LENGTH 256
 
+// Uncomment line below if you dont want to mess with Linker settings
+// Alternatively define _AUTO_LINK in Preprocessor Definitions
+//#define _AUTO_LINK
+
 #if defined(_M_X64) || defined(__x86_64__) || defined(_M_AMD64)
 #	define ANY_x64
 #	ifdef _WIN64
 #		define WIN_x64
+#		ifdef _AUTO_LINK
+#			pragma comment(lib, "lua5.1_64.lib")
+#		endif
 #	else
 #		define LINUX_x64
 #	endif
@@ -22,19 +29,11 @@
 #	define ANY_x86
 #	ifdef _WIN32
 #		define WIN_x86
+#		ifdef _AUTO_LINK
+#			pragma comment(lib, "lua5.1.lib")
+#		endif
 #	else
 #		define LINUX_x86
-#	endif
-#endif
-
-// Uncomment line below if you dont want to mess with Linker settings
-// Alternatively define _AUTO_LINK in Preprocessor Definitions
-//#define _AUTO_LINK
-#ifdef _AUTO_LINK
-#	ifdef ANY_x64
-#		pragma comment(lib, "lua5.1_64.lib")
-#	else
-#		pragma comment(lib, "lua5.1.lib")
 #	endif
 #endif
 

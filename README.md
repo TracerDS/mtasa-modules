@@ -12,8 +12,7 @@ The MTA Modules repository contains open-source modifications for MTA that can b
 ### Linux
 - **Acquire linux versions of lua5.1 libraries**
 - Clone the repository by using `git` command or through the `Download ZIP` option.
-- Use `make` to build the library
-- Builded SO library should be in the `Build` folder
+- Build source files with ur compiler (Makefile was removed due to unstable libraries)
 
 ## Contributing
 
