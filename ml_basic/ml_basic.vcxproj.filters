@@ -1,84 +1,84 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Pliki źródłowe">
+    <Filter Include="Source files">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Pliki nagłówkowe">
+    <Filter Include="Source files\mta">
+      <UniqueIdentifier>{b34c7530-fe6f-42fb-bed1-3e0a30ebc773}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Pliki zasobów">
+    <Filter Include="Include files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Pliki zasobów\lua">
+    <Filter Include="Include files\lua">
       <UniqueIdentifier>{8dce9621-cea2-4f45-975a-4101dc7da8ba}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Pliki zasobów\mta">
+    <Filter Include="Include files\mta">
       <UniqueIdentifier>{9feedbbd-890a-43ed-b943-5faf023ca07f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Pliki źródłowe\mta">
-      <UniqueIdentifier>{b34c7530-fe6f-42fb-bed1-3e0a30ebc773}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
-      <Filter>Pliki źródłowe</Filter>
+      <Filter>Source files</Filter>
     </ClCompile>
     <ClCompile Include="src\mta\CLuaArgument.cpp">
-      <Filter>Pliki źródłowe\mta</Filter>
+      <Filter>Source files\mta</Filter>
     </ClCompile>
     <ClCompile Include="src\mta\CLuaArguments.cpp">
-      <Filter>Pliki źródłowe\mta</Filter>
+      <Filter>Source files\mta</Filter>
     </ClCompile>
     <ClCompile Include="src\functions.cpp">
-      <Filter>Pliki źródłowe</Filter>
+      <Filter>Source files</Filter>
     </ClCompile>
     <ClCompile Include="src\mta\mta_main.cpp">
-      <Filter>Pliki źródłowe\mta</Filter>
+      <Filter>Source files\mta</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="hpp\main.hpp">
-      <Filter>Pliki nagłówkowe</Filter>
+      <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="include\lua\lauxlib.h">
-      <Filter>Pliki zasobów\lua</Filter>
+      <Filter>Include files\lua</Filter>
     </ClInclude>
     <ClInclude Include="include\lua\lua.h">
-      <Filter>Pliki zasobów\lua</Filter>
+      <Filter>Include files\lua</Filter>
     </ClInclude>
     <ClInclude Include="include\lua\luaconf.h">
-      <Filter>Pliki zasobów\lua</Filter>
+      <Filter>Include files\lua</Filter>
     </ClInclude>
     <ClInclude Include="include\lua\lualib.h">
-      <Filter>Pliki zasobów\lua</Filter>
+      <Filter>Include files\lua</Filter>
     </ClInclude>
     <ClInclude Include="include\mta\ILuaModuleManager.hpp">
-      <Filter>Pliki zasobów\mta</Filter>
+      <Filter>Include files\mta</Filter>
     </ClInclude>
     <ClInclude Include="include\mta\mta_main.hpp">
-      <Filter>Pliki zasobów\mta</Filter>
+      <Filter>Include files\mta</Filter>
     </ClInclude>
     <ClInclude Include="include\mta\CLuaArguments.hpp">
-      <Filter>Pliki zasobów\mta</Filter>
+      <Filter>Include files\mta</Filter>
     </ClInclude>
     <ClInclude Include="include\mta\CLuaArgument.hpp">
-      <Filter>Pliki zasobów\mta</Filter>
+      <Filter>Include files\mta</Filter>
     </ClInclude>
     <ClInclude Include="hpp\config.hpp">
-      <Filter>Pliki nagłówkowe</Filter>
+      <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="hpp\functions.hpp">
-      <Filter>Pliki nagłówkowe</Filter>
+      <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="include\mta\init.hpp">
-      <Filter>Pliki zasobów\mta</Filter>
+      <Filter>Include files\mta</Filter>
     </ClInclude>
     <ClInclude Include="include\lua\lua.hpp">
-      <Filter>Pliki zasobów\lua</Filter>
+      <Filter>Include files\lua</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
