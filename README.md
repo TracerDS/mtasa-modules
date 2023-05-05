@@ -10,6 +10,7 @@ The MTA Modules repository contains open-source modifications for MTA that can b
 - Builded DLL should be in the `Build` folder
 
 ### Linux
+- **Acquire linux versions of lua5.1 libraries**
 - Clone the repository by using `git` command or through the `Download ZIP` option.
 - Use `make` to build the library
 - Builded SO library should be in the `Build` folder
