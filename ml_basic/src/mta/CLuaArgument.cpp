@@ -1,5 +1,5 @@
 #include <mta/CLuaArgument.hpp>
-#include <string>
+#include <mta/init.hpp>
 #include <cassert>
 
 CLuaArgument::CLuaArgument(): m_szString(NULL), m_iType(LUA_TNIL) {}
@@ -13,7 +13,7 @@ CLuaArgument::CLuaArgument(const char* szString) : m_iType(LUA_TSTRING) {
     const auto size = strlen(szString) + 1;
     m_szString = new char[size];
 
-    strcpy_s(m_szString, size, szString);
+    Helper::strcpy_s(m_szString, size, szString);
 }
 CLuaArgument::CLuaArgument(void* pUserData)
     : m_szString(NULL), m_iType(LUA_TLIGHTUSERDATA), m_pLightUserData(pUserData) {}
@@ -45,7 +45,7 @@ const CLuaArgument& CLuaArgument::operator=(const CLuaArgument& Argument) {
             if (Argument.m_szString) {
                 const auto len = strlen(Argument.m_szString) + 1;
                 m_szString = new char[len];
-                strcpy_s(m_szString, len, Argument.m_szString);
+                Helper::strcpy_s(m_szString, len, Argument.m_szString);
             }
             break;
         default: break;
@@ -115,7 +115,7 @@ void CLuaArgument::Read(lua_State* luaVM, unsigned int uiArgument) {
 
             // Allocate our buffer
             m_szString = new char[sizeLuaString];
-            strncpy_s(m_szString, sizeLuaString, szLuaString, sizeLuaString);
+            Helper::strncpy_s(m_szString, sizeLuaString, szLuaString);
             break;
         } default:
             this->m_iType = LUA_TNONE;

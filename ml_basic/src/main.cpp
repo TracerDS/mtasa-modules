@@ -8,8 +8,8 @@ MTAEXPORT bool InitModule(
 ) {
 	pModuleManager = pManager;
 
-	strncpy_s(szModuleName, MODULE_NAME, MAX_INFO_LENGTH); // Set module name
-	strncpy_s(szAuthor, MODULE_AUTHOR, MAX_INFO_LENGTH); // Set module author
+	Helper::strncpy_s(szModuleName, MODULE_NAME, MAX_INFO_LENGTH); // Set module name
+	Helper::strncpy_s(szAuthor, MODULE_AUTHOR, MAX_INFO_LENGTH); // Set module author
 	*fVersion = MODULE_VERSION; // Set module version
 
 	pModuleManager->Printf("Module \"%s\" has been started!\n", MODULE_NAME);

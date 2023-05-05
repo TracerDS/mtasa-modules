@@ -279,13 +279,15 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\functions.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\mta\CLuaArgument.cpp" />
     <ClCompile Include="src\mta\CLuaArguments.cpp" />
+    <ClCompile Include="src\mta\mta_main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="hpp\config.hpp" />
-    <ClInclude Include="hpp\Functions.hpp" />
+    <ClInclude Include="hpp\functions.hpp" />
     <ClInclude Include="hpp\main.hpp" />
     <ClInclude Include="include\lua\lauxlib.h" />
     <ClInclude Include="include\lua\lua.h" />

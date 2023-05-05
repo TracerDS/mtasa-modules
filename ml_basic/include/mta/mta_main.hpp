@@ -27,7 +27,7 @@
 #	endif
 #endif
 
-extern ILuaModuleManager10* pModuleManager = NULL;
+extern inline ILuaModuleManager10* pModuleManager = NULL;
 
 static std::string GetResourceName(lua_State* luaVM) noexcept;
 static void* GetRootElement(lua_State* luaVM) noexcept;
