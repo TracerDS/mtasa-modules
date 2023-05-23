@@ -5,9 +5,6 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Source files\mta">
-      <UniqueIdentifier>{b34c7530-fe6f-42fb-bed1-3e0a30ebc773}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header files">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
@@ -27,17 +24,8 @@
     <ClCompile Include="src\main.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
-    <ClCompile Include="src\mta\CLuaArgument.cpp">
-      <Filter>Source files\mta</Filter>
-    </ClCompile>
-    <ClCompile Include="src\mta\CLuaArguments.cpp">
-      <Filter>Source files\mta</Filter>
-    </ClCompile>
     <ClCompile Include="src\functions.cpp">
       <Filter>Source files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\mta\mta_main.cpp">
-      <Filter>Source files\mta</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

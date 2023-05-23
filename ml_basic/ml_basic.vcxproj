@@ -281,9 +281,6 @@
   <ItemGroup>
     <ClCompile Include="src\functions.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\mta\CLuaArgument.cpp" />
-    <ClCompile Include="src\mta\CLuaArguments.cpp" />
-    <ClCompile Include="src\mta\mta_main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="hpp\config.hpp" />
