@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Include files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Include files\lua">
+      <UniqueIdentifier>{8dce9621-cea2-4f45-975a-4101dc7da8ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include files\mta">
+      <UniqueIdentifier>{9feedbbd-890a-43ed-b943-5faf023ca07f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include files\mta\api">
+      <UniqueIdentifier>{4b8d490a-acc7-45ca-97e2-c7acbce217ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include files\mta\misc">
+      <UniqueIdentifier>{d56ca2a1-dc70-4998-861d-24855013cfb4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\functions.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hpp\main.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lua\lauxlib.h">
+      <Filter>Include files\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lua\lua.h">
+      <Filter>Include files\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lua\luaconf.h">
+      <Filter>Include files\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lua\lualib.h">
+      <Filter>Include files\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\ILuaModuleManager.hpp">
+      <Filter>Include files\mta</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\mta_main.hpp">
+      <Filter>Include files\mta</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\CLuaArguments.hpp">
+      <Filter>Include files\mta</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\CLuaArgument.hpp">
+      <Filter>Include files\mta</Filter>
+    </ClInclude>
+    <ClInclude Include="hpp\config.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="hpp\functions.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\init.hpp">
+      <Filter>Include files\mta</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lua\lua.hpp">
+      <Filter>Include files\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\api\IAccount.hpp">
+      <Filter>Include files\mta\api</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\ILuaModule.hpp">
+      <Filter>Include files\mta</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\api\IAccountManager.hpp">
+      <Filter>Include files\mta\api</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\misc\SString.hpp">
+      <Filter>Include files\mta\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\misc\SString.h">
+      <Filter>Include files\mta\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\misc\SharedUtil.IntTypes.h">
+      <Filter>Include files\mta\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\misc\SharedUtil.Misc.h">
+      <Filter>Include files\mta\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\misc\WString.h">
+      <Filter>Include files\mta\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\misc\SharedUtil.Map.h">
+      <Filter>Include files\mta\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\misc\SharedUtil.Misc.hpp">
+      <Filter>Include files\mta\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\misc\SharedUtil.Time.h">
+      <Filter>Include files\mta\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\misc\UTF8.h">
+      <Filter>Include files\mta\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\misc\UTF8Detect.hpp">
+      <Filter>Include files\mta\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\misc\CDuplicateLineFilter.h">
+      <Filter>Include files\mta\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\misc\version.h">
+      <Filter>Include files\mta\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\misc\WString.hpp">
+      <Filter>Include files\mta\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\misc\SharedUtil.File.h">
+      <Filter>Include files\mta\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\misc\SharedUtil.File.hpp">
+      <Filter>Include files\mta\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mta\misc\SharedUtil.Buffer.h">
+      <Filter>Include files\mta\misc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\mta\misc\SharedUtil.Defines.h">
+      <Filter>Include files\mta\misc</Filter>
+    </None>
+  </ItemGroup>
+</Project>
