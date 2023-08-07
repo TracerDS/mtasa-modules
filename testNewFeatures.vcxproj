@@ -300,6 +300,7 @@
     <ClInclude Include="include\mta\init.hpp" />
     <ClInclude Include="include\mta\misc\CDuplicateLineFilter.h" />
     <ClInclude Include="include\mta\misc\SharedUtil.Buffer.h" />
+    <ClInclude Include="include\mta\misc\SharedUtil.DynamicArray.h" />
     <ClInclude Include="include\mta\misc\SharedUtil.File.h" />
     <ClInclude Include="include\mta\misc\SharedUtil.File.hpp" />
     <ClInclude Include="include\mta\misc\SharedUtil.IntTypes.h" />

@@ -131,6 +131,9 @@
     <ClInclude Include="include\mta\misc\SharedUtil.Buffer.h">
       <Filter>Include files\mta\misc</Filter>
     </ClInclude>
+    <ClInclude Include="include\mta\misc\SharedUtil.DynamicArray.h">
+      <Filter>Include files\mta\misc</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="include\mta\misc\SharedUtil.Defines.h">

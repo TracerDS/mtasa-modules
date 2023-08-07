@@ -17,6 +17,7 @@ MTAEXPORT bool InitModule(
 	IAccountManager* accManager = pModule->GetAccountManager();
 	auto accounts = accManager->GetAllAccounts();
 	pModule->Printf("AccManager: %d\n", accounts.size());
+	pModule->Printf("Didn't crash?\n");
 
 	return true;
 }
