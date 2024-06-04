@@ -1,4 +1,5 @@
 #include <main.hpp>
+#include <string>
 
 MTAEXPORT bool InitModule(
 	ILuaModuleManager10* pManager,
@@ -14,6 +15,9 @@ MTAEXPORT bool InitModule(
 
 	pModuleManager->Printf("Module \"%s\" has been started!\n", MODULE_NAME);
 
+	pModuleManager->Printf("pModuleManager->Printf\n");
+	pModuleManager->ErrorPrintf("pModuleManager->ErrorPrintf\n");
+
 	return true;
 }
 
@@ -23,6 +27,8 @@ MTAEXPORT bool ShutdownModule() {
 	return true;
 }
 
-MTAEXPORT void RegisterFunctions(lua_State* luaVM) {}
+MTAEXPORT void RegisterFunctions(lua_State* luaVM) {
+	pModuleManager->DebugPrintf(luaVM, "pModuleManager->DebugPrintf\n");
+}
 MTAEXPORT void ResourceStopping(lua_State* luaVM) {}
 MTAEXPORT void ResourceStopped(lua_State* luaVM) {}

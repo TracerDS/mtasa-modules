@@ -8,7 +8,7 @@ class CLuaArguments {
 
     void CopyArguments(const CLuaArguments& Arguments) {
         for (const auto& pArg : Arguments) {
-            m_Arguments.emplace_back(*pArg);
+            m_Arguments.push_back(new CLuaArgument(*pArg));
         }
     }
 public:
@@ -37,7 +37,7 @@ public:
         // Start reading arguments until there are none left
         while (lua_type(luaVM, uiIndexBegin) != LUA_TNONE) {
             // Create an argument, let it read out the argument and add it to our vector
-            m_Arguments.emplace_back(luaVM, uiIndexBegin++);
+            m_Arguments.push_back(new CLuaArgument(luaVM, uiIndexBegin++));
         }
     }
 

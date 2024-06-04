@@ -58,19 +58,20 @@ workspace "ml_basic"
             "MultiProcessorCompile",
         }
 
+        filter ""
+            functionlevellinking "On"
+
         filter "configurations:Debug"
             defines { "_DEBUG" }
             symbols "On"
             optimize "Off"
             runtime "Debug"
-            functionlevellinking "Off"
 
         filter "configurations:Release"
             defines { "NDEBUG" }
             symbols "Off"
             optimize "Full"
             runtime "Release"
-            functionlevellinking "On"
 
             flags {
                 "LinkTimeOptimization",
