@@ -5,5 +5,6 @@
 class Functions {
 	using FunctionType = int(*)(lua_State* luaVM);
 public:
-	// Your functions here
+	// Your functions here in this format:
+	// static int functionName(lua_State* luaVM);
 };
